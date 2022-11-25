@@ -16,6 +16,16 @@ public class Ejercicio4 {
             numeroWhile++;
 
         }
+        numeroWhile = 0;
+        do {
+            System.out.println("Count is: " + numeroWhile);
+            numeroWhile++;
+        } while (numeroWhile < 3);
+
+        
+        for (int numeroFor=0; numeroFor <3; numeroFor++){
+            System.out.println("numer for is :" + numeroFor);
+        }
 
     }
 }
