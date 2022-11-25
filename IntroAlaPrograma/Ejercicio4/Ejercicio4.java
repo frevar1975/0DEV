@@ -1,22 +1,22 @@
-//
-import java.util.function.Function;
+public class Ejercicio4 {
+    public static void main(String[] args) {
 
-public class Ejercicio4{
-/**
- * @param args
- */
-public static void main(String[] args) {
-   // var numeroIf = 0;
-        //resultant= espositivo(3);
-        //System.out.println(resultant);
-       
-   }
-    public static int espositivo(final int numero)
-    {
-        if (numero > 0){
+        int numeroIf = 0;
+        if (numeroIf > 0) {
             System.out.println("Es positivo");
+        } else if (numeroIf < 0) {
+            System.out.println("Es negativo");
+        } else {
+            System.out.println("Es 0");
         }
-        return numero;
+
+        int numeroWhile = 0;
+        while (numeroWhile < 3) {
+            System.out.println("Count is: " + numeroWhile);
+            numeroWhile++;
+
+        }
+
     }
 }
 
