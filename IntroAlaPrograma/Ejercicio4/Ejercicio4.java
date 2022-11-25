@@ -1,4 +1,7 @@
 public class Ejercicio4 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         int numeroIf = 0;
@@ -26,6 +29,27 @@ public class Ejercicio4 {
         for (int numeroFor=0; numeroFor <3; numeroFor++){
             System.out.println("numer for is :" + numeroFor);
         }
+         var  estacion ="VERANO";
+        switch(estacion) {
+            case "PRIMAVERA":
+              // code block
+              System.out.println("ES PRIMAVERA");
+              break;
+              case "VERANO":
+              // code block
+              System.out.println("ES VERANO");
+              break;
+              case "OTOÑO":
+              // code block
+              System.out.println("ES OTOÑO");
+              break;
+              case "INVIERNO":
+              // code block
+              System.out.println("ES INVIERNO");
+              break;
+            default:
+              // code block
+          }
 
     }
 }
