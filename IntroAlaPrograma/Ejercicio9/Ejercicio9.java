@@ -55,6 +55,7 @@ class Trabajador extends Persona{
 
     public int getSalario() {
         return salario;
+        
     }
 
     public void setSalario(int salario) {
