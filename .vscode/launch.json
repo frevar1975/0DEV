@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Entrega2",
+            "request": "launch",
+            "mainClass": "IntroAlaPrograma.Entrega2",
+            "projectName": "0DEV_3c99a056"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio4",
+            "request": "launch",
+            "mainClass": "IntroAlaPrograma.Ejercicio4.Ejercicio4",
+            "projectName": "0DEV_3c99a056"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio8",
+            "request": "launch",
+            "mainClass": "IntroAlaPrograma.Ejercicio8",
+            "projectName": "0DEV_3c99a056"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio9",
+            "request": "launch",
+            "mainClass": "IntroAlaPrograma.Ejercicio9.Ejercicio9",
+            "projectName": "0DEV_3c99a056"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tema1entrega",
+            "request": "launch",
+            "mainClass": "IntroAlaPrograma.Tema1entrega",
+            "projectName": "0DEV_3c99a056"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tema2",
+            "request": "launch",
+            "mainClass": "IntroAlaPrograma.Tema2",
+            "projectName": "0DEV_3c99a056"
+        }
+    ]
+}
