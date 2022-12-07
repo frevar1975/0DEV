@@ -1,4 +1,4 @@
-/*Escribe el código que devuelva una cadena al revés. Por ejemplo, la cadena "hola mundo", debe retornar "odnum aloh".
+/* Done --- Escribe el código que devuelva una cadena al revés. Por ejemplo, la cadena "hola mundo", debe retornar "odnum aloh".
 
 Crea un array unidimensional de Strings y recórrelo, mostrando únicamente sus valores.
 
@@ -25,13 +25,25 @@ package IntroAlaPrograma.Ejercicio10;
 import IntroAlaPrograma.Clases.main;
 
 public class Entregatem10 {
+/**
+ * @param args
+ */
 public static void main(String[] args) {
-    
+    String cadenavolcada=reverse("freddyjulio");
+    System.out.println(cadenavolcada);
 }
 
 
+/**
+ * @param texto
+ * @return
+ */
 public static String reverse(String texto) {
-    return texto;
+ 
+    String volcar = ""; /*variable donde almaceno el texto */
+    for (int x=texto.length()-1;x>=0;x--)
+    volcar = volcar + texto.charAt(x); /*recorro con un for letra or letra y lo volcamos */
+    return volcar;
     
  }
 }
