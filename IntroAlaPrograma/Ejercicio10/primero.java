@@ -44,9 +44,7 @@ public class primero {
            
 
     } 
-    catch(FileNotFoundException e){
-    System.out.println("mal");
-    }
+    
 
     }
-}
+
