@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Entregatem10",
+            "request": "launch",
+            "mainClass": "IntroAlaPrograma.Ejercicio10.Entregatem10",
+            "projectName": "0DEV_3c99a056"
+        },
+        {
+            "type": "java",
             "name": "Launch Entrega2",
             "request": "launch",
             "mainClass": "IntroAlaPrograma.Entrega2",
