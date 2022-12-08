@@ -33,7 +33,7 @@ public class EjercicioFinal {
          Si se dispara la excepción, mostraremos el mensaje "Esto no puede hacerse". 
          Finalmente, mostraremos en cualquier caso: "Demo de código". */
 
-        System.out.println(Movertexto("C:/open-bootcamp/In.txt","C:/open-bootcamp/Out.txt")); 
+        System.out.println(Movertexto("C:/dev/In.txt","C:/dev/Out.txt")); 
         /*Utilizando InputStream y PrintStream, crea una función que reciba dos parámetros: "fileIn" y "fileOut".
          La tarea de la función será realizar la copia del fichero dado en el parámetro "fileIn" 
          al fichero dado en "fileOut". */
@@ -47,25 +47,22 @@ public class EjercicioFinal {
     // notbook casa
     public static String Movertexto(String In, String Out)
     {
-        try {
-            InputStream fichero = new FileInputStream(In);
-            BufferedInputStream ficheroBuffer = new BufferedInputStream(fichero);
-            //byte datos[]=new byte[5];
-            int dato = ficheroBuffer.read();
-            while (dato != -1)
-            {
-                System.out.println((char)dato);
-                dato = ficheroBuffer.read();
-                
-            }
-            fichero.close();
-        } catch(IOException e) {
-            System.out.println("fallo " + e.getMessage());
-        } finally {
-            // ... cleanup that will execute whether or not an error occurred ...
+        try{
+
+            InputStream in = new FileInputStream(In);
+            byte[]datos = in.readAllBytes();
+            PrintStream out = new PrintStream(Out);
+            out.write(datos);
+
         }
-         return In+ Out;
-         
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        finally{
+
+        }
+
+        return ("archivo creado");
     
     } // fin movertexto
 
