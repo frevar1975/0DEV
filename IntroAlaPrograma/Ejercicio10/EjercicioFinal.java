@@ -36,32 +36,7 @@ public class EjercicioFinal {
          La tarea de la función será realizar la copia del fichero dado en el parámetro "fileIn" al fichero dado en "fileOut". */
         
          // desde casa 
-         try {
-         InputStream fichero = new FileInputStream("c:/dev/filein.txt");
-         try{
-            byte[] datos = fichero.readAllBytes();
-            for (byte dato:datos){
-                System.out.println((char)dato);
-            }
-         } catch(IOException e){
-            System.out.println("es error" + e.getMessage());
-         }
-        }
-        catch(FileNotFoundException e)
-        {
-            System.out.println("el archivo no se encontro" + e.getMessage());
-        }
-
-        PrintStream info = new PrintStream("fileout4.txt");
-        try{
-
-        }
-        catch(FileNotFoundException e){
-            System.out.println(e.getMessage());
-        }
-        finally{
-            System.out.println("fin");
-        }
+         
     } // fin main
     
     /**
