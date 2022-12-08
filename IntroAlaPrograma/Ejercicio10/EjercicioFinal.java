@@ -1,5 +1,6 @@
 package IntroAlaPrograma.Ejercicio10;
 
+import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -32,16 +33,32 @@ public class EjercicioFinal {
          Si se dispara la excepción, mostraremos el mensaje "Esto no puede hacerse". 
          Finalmente, mostraremos en cualquier caso: "Demo de código". */
 
-         /*Utilizando InputStream y PrintStream, crea una función que reciba dos parámetros: "fileIn" y "fileOut".
-         La tarea de la función será realizar la copia del fichero dado en el parámetro "fileIn" al fichero dado en "fileOut". */
+        System.out.println(Movertexto("C:/open-bootcamp/Iny.txt","C:/open-bootcamp/Out.txt")); 
+        /*Utilizando InputStream y PrintStream, crea una función que reciba dos parámetros: "fileIn" y "fileOut".
+         La tarea de la función será realizar la copia del fichero dado en el parámetro "fileIn" 
+         al fichero dado en "fileOut". */
      
     } 
-
+    
     
     /**
      * 
      */
+    // notbook casa
+    public static String Movertexto(String In, String Out)
+    {
+        try {
+            InputStream fichero = new FileInputStream(In);
+        } catch(IOException e) {
+            System.out.println("fallo " + e.getMessage());
+        } finally {
+            // ... cleanup that will execute whether or not an error occurred ...
+        }
+        return In;
+         
     
+    } // fin movertexto
+
      public static int DividePorCero(int a, int b)  {
         int resultado = 0;
         try{
